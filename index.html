@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>获取qq群链接</title>
+    <title>获取加群链接</title>
     <style>
         :root {
             --primary-color: #1890ff;
@@ -37,6 +37,7 @@
             color: #333;
             margin-bottom: 24px;
             font-weight: 500;
+            text-align: center;
         }
 
         .input-group {
@@ -122,7 +123,7 @@
 
 <body>
     <div class="card">
-        <h1>QQ群号转换器</h1>
+        <h1>获取加群链接</h1>
         <div class="input-group">
             <input type="text" id="qqNumber" placeholder="请输入QQ群号" />
             <button onclick="generateCode()">生成</button>
@@ -141,6 +142,8 @@
             <div class="result-box">
                 <div class="result-label">手机链接：</div>
                 <div id="apiResult"></div>
+                <button class="copy-button" onclick="openMobileLink('apiResult')"
+                    style="position: absolute; right: 80px; top: 8px;">跳转</button>
                 <button class="copy-button" onclick="copyToClipboard('apiResult')"
                     style="position: absolute; right: 10px; top: 8px;">复制</button>
             </div>
@@ -197,6 +200,11 @@
         function openLink(elementId) {
             const link = document.getElementById(elementId).innerText;
             window.open(link, '_self');
+        }
+
+        function openMobileLink(elementId) {
+            const link = document.getElementById(elementId).innerText;
+            window.open(link, '_blank'); // 新标签页打开手机链接
         }
 
         document.getElementById('qqNumber').addEventListener('keypress', function (e) {
