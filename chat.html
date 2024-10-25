@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>聊天常用话术</title>
+    <link rel="icon" href="https://assets.retiehe.com/host-icon-512-2.png" type="image/png">
+    <link rel="shortcut icon" href="https://assets.retiehe.com/host-icon-512-2.png" type="image/png">
+    <style>
+        :root {
+            --primary-color: #6366f1;
+            --bg-color: #f8fafc;
+            --text-color: #334155;
+            --code-bg: #ffffff;
+            --border-color: #e2e8f0;
+            --quote-border: #6366f1;
+            --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #0f172a;
+                --text-color: #e2e8f0;
+                --code-bg: #1e293b;
+                --border-color: #334155;
+            }
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            transition: all 0.3s ease;
+        }
+
+        h1 {
+            font-size: 2.25rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin: 2rem 0;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--border-color);
+            letter-spacing: -0.025em;
+        }
+
+        blockquote {
+            margin: 1.5rem 0;
+            padding: 1rem 1.5rem;
+            background: var(--code-bg);
+            border-left: 4px solid var(--quote-border);
+            border-radius: 0.5rem;
+            box-shadow: var(--shadow-sm);
+        }
+
+        blockquote p {
+            margin: 0;
+            color: var(--primary-color);
+            font-weight: 500;
+        }
+
+        hr {
+            margin: 2rem 0;
+            border: 0;
+            height: 2px;
+            background: linear-gradient(to right, var(--primary-color), transparent);
+        }
+
+        strong {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        .code-block {
+            position: relative;
+            background: var(--code-bg);
+            border-radius: 0.75rem;
+            padding: 1rem;
+            margin: 1rem 0;
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+        }
+
+        .code-block:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px -2px rgba(0, 0, 0, 0.15);
+        }
+
+        .copy-button {
+            position: absolute;
+            top: 0.75rem;
+            right: 0.75rem;
+            padding: 0.5rem 1rem;
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 0.5rem;
+            font-size: 0.875rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            opacity: 0;
+            transform: translateY(5px);
+        }
+
+        .code-block:hover .copy-button {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .copy-button:hover {
+            background: #4f46e5;
+            transform: scale(1.05);
+        }
+
+        .copy-button.copied {
+            background: #10b981;
+        }
+
+        pre {
+            margin: 0;
+            font-family: 'Fira Code', 'JetBrains Mono', monospace;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            white-space: pre-wrap;
+            word-break: break-word;
+            color: var(--text-color);
+        }
+
+        @media (max-width: 640px) {
+            body {
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 1.75rem;
+            }
+
+            .copy-button {
+                opacity: 1;
+                transform: none;
+                top: auto;
+                bottom: 0.75rem;
+                right: 0.75rem;
+            }
+        }
+
+        /* 添加平滑滚动 */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* 添加内容块的动画效果 */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .code-block,
+        blockquote {
+            animation: fadeIn 0.5s ease-out forwards;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>聊天常用话术</h1>
+
+    <blockquote>
+        <p>进QQ群过验证</p>
+    </blockquote>
+    <div class="code-block">
+        <button class="copy-button">复制</button>
+        <pre>群里号被盗了重进一下谢谢</pre>
+    </div>
+    <div class="code-block">
+        <button class="copy-button">复制</button>
+        <pre>对xx挺感兴趣的</pre>
+    </div>
+
+    <hr>
+
+    <blockquote>
+        <p>企微聊天</p>
+    </blockquote>
+    <p><strong>质疑问年龄：</strong></p>
+    <div class="code-block">
+        <button class="copy-button">复制</button>
+        <pre>这边只是简单统计一下年龄分布情况呢，同学可以告诉一下吗</pre>
+    </div>
+
+    <p><strong>06年-月份不明/当月：</strong></p>
+    <div class="code-block">
+        <button class="copy-button">复制</button>
+        <pre>那同学今年过生日了么</pre>
+    </div>
+    <div class="code-block">
+        <button class="copy-button">复制</button>
+        <pre>同学满十八岁了吗，这边简单统计一下年龄分布情况呢</pre>
+    </div>
+
+    <p><strong>一直未回：</strong></p>
+    <div class="code-block">
+        <button class="copy-button">复制</button>
+        <pre>同学进群是来交流学习绘画还是编程呢？可以回复一下咩</pre>
+    </div>
+
+    <p><strong>回复-？：</strong></p>
+    <div class="code-block">
+        <button class="copy-button">复制</button>
+        <pre>同学是有哪里不明白的吗</pre>
+    </div>
+
+    <p><strong>回复-别人拉/你拉的/不知道：</strong></p>
+    <div class="code-block">
+        <button class="copy-button">复制</button>
+        <pre>那可能是群里的同学把你拉进来的吧</pre>
+    </div>
+    <div class="code-block">
+        <button class="copy-button">复制</button>
+        <pre>没关系呢，那同学对二次元动漫绘画感兴趣吗？</pre>
+    </div>
+
+    <p><strong>催码：</strong></p>
+    <div class="code-block">
+        <button class="copy-button">复制</button>
+        <pre>同学申请好了么</pre>
+    </div>
+    <div class="code-block">
+        <button class="copy-button">复制</button>
+        <pre>我刚已经帮你和老师说好了，现在加一下和我说哦</pre>
+    </div>
+
+    <p><strong>催到课：</strong></p>
+    <div class="code-block">
+        <button class="copy-button">复制</button>
+        <pre>宝~那个老师有没有告诉你 学会了的话还可以在老师那接稿赚点外快呀？需要的话你找一下那个老师了解哦，等下正好有课，一定要来听一听。</pre>
+    </div>
+
+    <hr>
+
+    <blockquote>
+        <p>校园墙广告</p>
+    </blockquote>
+    <div class="code-block">
+        <button class="copy-button">复制</button>
+        <pre>24年准新生还没加大学(必备)技能墙的，赶紧加下了大学必备技能；成绩 专业 录取，开学 详情 军训，为接下来的大学新生活 、入学生会 社团、转团 转专业、 助学金 各类资料、校园活动提前做好准备【后续会发布学校课外活动！无偿分享插画，原画，动漫设计，二次元游戏制作，ai板绘，计算机编程，人工智能，python，英语等级，教资，ppt模版教程以及大学必备的一些技能】
+QQ群：511385340</pre>
+    </div>
+
+    <script>
+        document.querySelectorAll('.copy-button').forEach(button => {
+            button.addEventListener('click', async () => {
+                const codeBlock = button.nextElementSibling;
+                const text = codeBlock.textContent;
+
+                try {
+                    await navigator.clipboard.writeText(text);
+                    button.textContent = '已复制!';
+                    button.classList.add('copied');
+
+                    setTimeout(() => {
+                        button.textContent = '复制';
+                        button.classList.remove('copied');
+                    }, 2000);
+                } catch (err) {
+                    console.error('Failed to copy text: ', err);
+                    button.textContent = '复制失败';
+                    setTimeout(() => {
+                        button.textContent = '复制';
+                    }, 2000);
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
